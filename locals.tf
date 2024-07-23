@@ -9,12 +9,33 @@ locals {
       archived = false
       archive_on_destroy = true
     }
+
     "371fem-eci-terraform-github" ={
       description = "Terraform repo for managing GitHub"
       gitignore_template = "Terraform"
       name = "371fem-eci-terraform-github"
       visibility = "public"
-      topics = ["terraform", "github", "frontend-masters"]
+      topics = ["terraform", "frontend-masters"]
+      archived = false
+      archive_on_destroy = true
+    }
+
+    "372fem-eci-terraform-aws-network" ={
+      description = "Terraform repo for managing AWS Network"
+      gitignore_template = "Terraform"
+      name = "372fem-eci-terraform-aws-network"
+      visibility = "public"
+      topics = ["terraform", "aws", "frontend-masters"]
+      archived = false
+      archive_on_destroy = true
+    }
+
+    "373fem-eci-terraform-aws-cluster" ={
+      description = "Terraform repo for managing AWS Cluster"
+      gitignore_template = "Terraform"
+      name = "373fem-eci-terraform-aws-cluster"
+      visibility = "public"
+      topics = ["terraform", "aws", "frontend-masters"]
       archived = false
       archive_on_destroy = true
     }
