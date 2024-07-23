@@ -6,6 +6,8 @@ locals {
       name = "370fem-eci-terraform-tfe"
       visibility = "public"
       topics = ["terraform", "tfe", "frontend-masters"]
+      archived = false
+      archive_on_destroy = true
     }
     "371fem-eci-terraform-github" ={
       description = "Terraform repo for managing GitHub"
@@ -13,6 +15,8 @@ locals {
       name = "371fem-eci-terraform-github"
       visibility = "public"
       topics = ["terraform", "github", "frontend-masters"]
+      archived = false
+      archive_on_destroy = true
     }
   }
 }
