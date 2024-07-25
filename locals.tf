@@ -39,5 +39,15 @@ locals {
       archived = false
       archive_on_destroy = true
     }
+
+    "374fem-eci-service" ={
+      description = "Service in Go"
+      gitignore_template = "Go"
+      name = "374fem-eci-service"
+      visibility = "public"
+      topics = ["go","servive", "frontend-masters"]
+      archived = false
+      archive_on_destroy = true
+    }
   }
 }
