@@ -40,10 +40,20 @@ locals {
       archive_on_destroy = true
     }
 
-    "374fem-eci-service" ={
+    "374fem-eci-terraform-product-service" ={
+      description = "Terraform repo for managing AWS Elastic Container Service"
+      gitignore_template = "Terraform"
+      name = "374fem-eci-terraform-product-service"
+      visibility = "public"
+      topics = ["go","servive", "frontend-masters"]
+      archived = false
+      archive_on_destroy = true
+    }
+
+    "375fem-eci-service" ={
       description = "Service in Go"
       gitignore_template = "Go"
-      name = "374fem-eci-service"
+      name = "375fem-eci-service"
       visibility = "public"
       topics = ["go","servive", "frontend-masters"]
       archived = false
